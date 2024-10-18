@@ -1,9 +1,10 @@
 function nameAge(name, age) {
     if (age >= 18) {
         return 'Hola ' + name + ', eres mayor de edad';
-    } else {
-        return 'Hola ' + name + ', eres menor de edad';
-  }
+    }
+
+    return 'Hola ' + name + ', eres menor de edad';
+  
 }
 
 const checkAge1 = nameAge('Fernando', 38);
@@ -17,9 +18,10 @@ console.log(checkAge2);
 function topNumber(numberA, numberB) {
     if (numberA > numberB) {
         return numberA;
-    } else {
-        return numberB;
     }
+       
+    return numberB;
+    
 }
 
 const checkNumber1 = topNumber(23, 35);
@@ -35,9 +37,9 @@ function numberType(numberC) {
         return 'Es un número positivo';
     } else if (numberC < 0) {
         return 'Es un número negativo';
-    } else {
-        return 'Es cero';
     }
+    return 'Es cero';
+    
 }
 
 const checkType1 = numberType(38);
@@ -55,9 +57,9 @@ function averageGrade(gradeA,gradeB,gradeC) {
         return 'Suspenso';
     } else if (average >= 5 && average < 8) {
         return 'Aprobado';
-    } else {
-        return 'Matrícula de honor';
     }
+    return 'Matrícula de honor';
+    
 }
 
 const average1 = averageGrade(2, 3, 5);
@@ -95,9 +97,10 @@ function multipleOf(numberG) {
         return 'Es divisible por 5';
     } else if (numberG % 3 === 0) {
         return 'Es divisible por 3';
-    } else {
-        return numberG;
     }
+        
+    return numberG;
+    
 }
 
 const multiple1 = multipleOf(3);
@@ -114,9 +117,10 @@ console.log(multiple4);
 function oddNumber(numberH) {
     if (numberH % 2 === 0) {
         return 'Es un número par';
-    } else {
-        return 'Es un número impar';
     }
+        
+    return 'Es un número impar';
+    
 }
 
 const odd1 = oddNumber(19);
@@ -129,9 +133,10 @@ console.log(odd2);
 function leapYear(year) {
     if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
         return 'Es un año bisiesto';
-    } else {
-        return 'No es un año bisiesto';
     }
+        
+    return 'No es un año bisiesto';
+    
 }
 
 const year1 = leapYear(2024);
