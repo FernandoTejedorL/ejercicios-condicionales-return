@@ -79,15 +79,18 @@ function topOfThree(numberD, numberE, numberF) {
     } else if (numberF > numberD && numberF > numberE) {
         return numberF;
     }
+    return 'Son todos iguales';
 }
 
 const top1 = topOfThree(2, 3, 5);
 const top2 = topOfThree(5, 6, 7);
 const top3 = topOfThree(9, 10, 9);
+const top4 = topOfThree(9, 9, 9);
 
 console.log(top1);
 console.log(top2);
 console.log(top3);
+console.log(top4);
 
 
 function multipleOf(numberG) {
